@@ -13,7 +13,7 @@ namespace Dependency
         {
         }
 
-        public void find(String loc, String keyword) //finds files that have a specific keyward at that location
+        public void find(string loc, string keyword) //finds files that have a specific keyward at that location
         {
 
                 var application = Directory.EnumerateFiles(loc, "*", SearchOption.AllDirectories);
@@ -24,7 +24,7 @@ namespace Dependency
                         using (StreamReader sr = new StreamReader(currentFile))
                         {
                             // Read the stream to a string, and write the string to the console.
-                            String line = sr.ReadToEnd();
+                            string line = sr.ReadToEnd();
                             if (line.Contains(keyword))
                             {
                                 Console.WriteLine(currentFile);

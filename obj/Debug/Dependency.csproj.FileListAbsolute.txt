@@ -1,6 +1,5 @@
-C:\Users\aluu\Desktop\Dependency\Dependency\bin\Debug\Dependency.exe
 C:\Users\aluu\Desktop\Dependency\Dependency\bin\Debug\Dependency.exe.config
+C:\Users\aluu\Desktop\Dependency\Dependency\bin\Debug\Dependency.exe
+C:\Users\aluu\Desktop\Dependency\Dependency\bin\Debug\Dependency.pdb
 C:\Users\aluu\Desktop\Dependency\Dependency\obj\Debug\Dependency.exe
 C:\Users\aluu\Desktop\Dependency\Dependency\obj\Debug\Dependency.pdb
-C:\Users\aluu\Desktop\Dependency\Dependency\bin\Debug\Dependency.pdb
-C:\Users\aluu\Desktop\Dependency\Dependency\obj\Debug\Dependency.csprojResolveAssemblyReference.cache

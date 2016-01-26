@@ -11,14 +11,15 @@ namespace Dependency
     {
         public Specific()
         {
+            
         }
 
-        public void find(String loc, List<String> kArray, String keyword) //find files at a location with an array of different extensions and a keyword
+        public void find(string loc, List<string> kArray, string keyword) //find files at a location with an array of different extensions and a keyword
         {
             foreach (string t in kArray)
             {
 
-                var application = Directory.EnumerateFiles(loc, "*." + kArray, SearchOption.AllDirectories);
+                var application = Directory.EnumerateFiles(loc, "*." + t, SearchOption.AllDirectories);
                 foreach (string currentFile in application)
                 {
                     try
@@ -26,11 +27,13 @@ namespace Dependency
                         using (StreamReader sr = new StreamReader(currentFile))
                         {
                             // Read the stream to a string, and write the string to the console.
-                            String line = sr.ReadToEnd();
-                            if (line.Contains(keyword))
-
+                            string line = sr.ReadToEnd();
+                            if (line.Contains(keyword) && !line.Contains("Debug"))
+                            {
                                 Console.WriteLine(currentFile);
-                            Console.WriteLine("\n");
+                                Console.WriteLine("\n");
+                            }
+   
 
                         }
                     }
